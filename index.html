@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FreskoQuotesCreator</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+	<script src="js/main.min.js" defer></script>
+	<meta property="og:title" content="FreskoQuotesCreator">
+	<meta property="og:site_name" content="FreskoQuotesCreator">
+	<meta property="og:url" content="https://hikkir3.github.io/JackFreskoQuotes/">
+	<meta property="og:description" content="Создание цитат (Жак Крексо)">
+	<meta property="og:image" content="images/fresko.jpg">
+</head>
+
+<body>
+
+
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__list-item" data-btn="0">About</li>
+					<li class="header__list-item" data-btn="1">Credits</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<div class="main__block">
+				<h6 class="main__block-title title">
+					Создай своего Жака Фреско
+				</h6>
+				<div class="main__form">
+					<div class="main__input-form">
+						<input class="main__block-input" type="text">
+						<div class="main__input-form-error"></div>
+					</div>
+					<div class="number">
+						<div class="number__inner">
+							<div class="number__count-box number__box-input">
+								<div class="number__count"></div>
+							</div>
+							<div class="number__box">
+								<div class="number__plus number__common"></div>
+								<div class="number__minus number__common"></div>
+							</div>
+						</div>
+						<div class="number__select">
+							<div class="number__count-box number__select-item">
+								<div class="number__dig">20px</div>
+							</div>
+							<div class="number__count-box number__select-item">
+								<div class="number__dig">24px</div>
+							</div>
+							<div class="number__count-box number__select-item">
+								<div class="number__dig">28px</div>
+							</div>
+							<div class="number__count-box number__select-item">
+								<div class="number__dig">32px</div>
+							</div>
+							<div class="number__count-box number__select-item">
+								<div class="number__dig">36px</div>
+							</div>
+							<div class="number__count-box number__select-item">
+								<div class="number__dig">42px</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="main__form-btn btn2">Добавить</div>
+				</div>
+				<div class="main__form">
+					<div class="main__form-clear btn2">Очистить холст</div>
+					<a class="main__block-download btn2">Скачать</a>
+				</div>
+			</div>
+			<div class="canvas__inner">
+				<canvas id="canv" width="736" height="391">
+				</canvas>
+			</div>
+	</section>
+
+	<div class="popup">
+		<div class="popup__block">
+			<img class="popup__block-mark" src="images/mark.svg" alt="mark">
+
+			<div class="popup__content authorContent">
+				<div class="popup__box author">
+					<p class="popup__box-text popup__box-item">Author: <span class="red-color">Kirill Balabanov</span>
+					</p>
+					<a class="popup__box-link popup__box-item" href="mailto:hikki.btz@gmail.com">contact :
+						hikki.btz@gmail.com</a>
+					<p class="popup__box-link popup__box-item">privat24: <span
+							class="red-color digits">5168755904458227</span>
+					</p>
+				</div>
+			</div>
+			<div class="popup__content aboutContent">
+				<div class="popup__box about-box">
+					<ul class="popup__box-list">
+						<li class="popup__box-item">
+							<p class="popup__box-text">
+								<span class="red-color">Создай своего Жака Фреско</span> – исключительно развлекательный
+								сайт, созданный дабы общаться интелликтуальными картинками с безмозглыми собеседниками
+								(извиняюсь за кибербулинг (с) Жак Фреско).
+							</p>
+						</li>
+						<li class="popup__box-item">
+							<a class="popup__box-link link-about" href="rules.html" target="_blank">
+								Rules
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="errorPopup">
+		<div class="errorPopup__inner">
+			<p class="errorPopup__text">Just $('#monika').</p>
+			<button class="errorPopup__btn">
+				<p class="errorPopup__bell">OK</p>
+			</button>
+		</div>
+	</div>
+	<p class="text-width"></p>
+</body>
+
+</html>
